@@ -1,0 +1,231 @@
+/* 
+
+ green: #009688
+ brown: #674A48
+ off-white: #f8f9fa - text
+
+ baby blue: #53B4EB - For winter tabs
+ orange: #FF9900 - For summer/fall tabs
+ yellow: #FFC700 - For summer tabs
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+    font-size: 1rem;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    letter-spacing: .25px;
+    font-weight: 300;
+}
+
+/*************************
+HERO / LANDING PAGE SECTION
+**************************/
+
+.hero {
+    position: relative;
+}
+
+/* Use psuedo class to apply filter onto image otherwise the brightness filter will also apply to text */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/hero/hero-zion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(90%);
+}
+
+.hero-content {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 100%;
+    height: 350px;
+}
+
+.hero-content .hero-title {
+    color: #f8f9fa;
+    font-size: 70px;
+    margin-bottom: .3em;
+    line-height: 77px;
+    letter-spacing: 1px;
+    text-shadow: -1px 2px 5px rgba(29 37 45 / 65%);
+}
+
+.hero-content .hero-desc {
+    color: #f8f9fa;
+    margin-bottom: 2em;
+    width: 52ch;
+    font-weight: 400;
+    text-shadow: -1px 2px 5px rgb(29 37 45 / 100%);
+}
+
+.hero-content .hero-button {
+    background-color: #009688;
+    border-radius: 20px 20px 2px 20px;
+    color: #f8f9fa;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 255px;
+    text-shadow: -1px 2px 5px rgb(29 37 45 / 0.50);
+}
+
+.hero-button:hover {
+    border-radius: 100px;
+    transition: all .6s ease-in-out;
+}
+
+/* Navigation Bar */
+.nav-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    min-height: 12vh;
+    width: 100%;
+}
+
+.nav-link-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.logo a {
+    padding: 0 5px;
+    letter-spacing: .7px;
+}
+
+.logo a img {
+    width: 55px;
+}
+
+.logo h2 {
+    color: #f8f9fa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    display: flex;
+    text-shadow: -1px 2px 5px rgb(29 37 45 / 45%);
+}
+
+.nav-title a {
+    list-style: none;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.nav-content .nav-list-1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 47.5%;
+}
+
+.nav-list-1 li, .nav-list-2 li {
+    list-style: none;
+}
+
+.nav-list-1 li a, .nav-list-2 li a {
+    color: #f8f9fa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 5px rgb(29 37 45 / 50%);
+}
+
+.nav-list-1 li a:hover {
+    border-top: 2px solid #f8f9fa;
+}
+
+.links-thing:hover {
+    border-top: 2px solid #f8f9fa;
+}
+
+.nav-list-2 li img {
+    height: 25px;
+    width: 25px;
+    margin-top: 3px;
+    transform: translateX(10px);
+}
+
+.nav-list-2 {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+
+.vert-line {
+    border-left: 2px solid #f8f9fa;
+    height: 20px;
+}
+
+/* hamburger menu */
+.burger-menu {
+    display: none;
+    border: 2px solid #f8f9fa;
+    border-radius: 3px;
+    padding: 3px;
+    height: 35px;
+    width: 50px;
+    margin: 3em;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 30px;
+    height: 2px;
+    background-color:#f8f9fa;
+    margin: 5px;
+    transition: all 0.3s ease;
+}

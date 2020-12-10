@@ -1,0 +1,140 @@
+@media screen and (max-width: 1103px) {
+
+    .nav-list-2 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-link-box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-height: 100vh;
+        width: 50%;
+        margin-left: auto;
+        background-color: #fff;
+        opacity: .95;
+        z-index: 1000000;
+
+        transform: translateX(100%);
+        /* transition: transform .5s ease-in; */
+    }
+
+    .nav-link-box li {
+        opacity: 1;
+    }
+
+    .logo {
+        margin: 3em 0 3em 3em;
+        width: 100%;
+    }
+
+    .main-logo, .booking-icon {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(14%) hue-rotate(59deg) brightness(102%) contrast(100%);
+    }
+
+    .nav-content .nav-list-1 {
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+    }
+
+    .nav-list-1 li {
+        margin: 2.5em 2em;
+    }
+
+    .nav-title a, .nav-list-1 li a, .nav-list-2 li a {
+        color: #212529;
+    }
+
+    .nav-list-1 li a:hover {
+        border-top: 2px solid #212529;
+    }
+    
+    .links-thing:hover {
+        border-top: 2px solid #212529;
+    }
+
+    .nav-list-2 li a img {
+        color: #212529;
+    }
+
+    .nav-list-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .nav-list-2 li {
+        margin: 1.4em 2em;
+        transform: translateY(-30px);
+    }
+
+    .nav-list-2 .booking-icon, .vert-line {
+        display: none;
+    }
+
+    .vert-line {
+        border-left: 2px solid #212529;
+    }
+
+    /* burger menu */
+    .burger-menu {
+        display: block;
+    }
+}
+
+/* activate nav from off-screen */
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* toggle burger menu to X */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5, 6px);
+}
+.toggle .line2 {
+
+}
+.toggle .line3 {
+    transform: rotate(45deg)translate(-5, -6px);
+
+}
+
+@media screen and (max-width: 694px) {
+    .hero-content .hero-title {
+        color: #f8f9fa;
+        font-size: 64px;
+        margin-bottom: .3em;
+        line-height: 77px;
+        width: 10ch;
+    }
+
+    .hero-content .hero-desc {
+        color: #f8f9fa;
+        margin-bottom: 2em;
+        width: 42ch;
+        font-weight: 400;
+        text-shadow: -1px 2px 5px rgb(29 37 45 / 100%);
+    }
+
+    .hero-content {
+        content: "";
+        position: absolute;
+        bottom: 25%;
+        left: 10%;
+        width: 100%;
+        height: 350px;
+    }
+
+    
+}
