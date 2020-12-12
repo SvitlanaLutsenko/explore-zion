@@ -1,113 +1,150 @@
-@media screen and (max-width: 1103px) {
+@media screen and (max-width: 1143px) {
 
-    .nav-list-2 {
-        width: 30%;
+    .navbar {
+        height: 12vh;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        display: flex;
+    }
+
+    .navbar img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar-brand h2 {
+        font-size: 1.6rem;
+    }
+
+    #navbarToggle > ul > li {
+        padding: .3em;
+    }
+
+    #navbarToggle > ul > li > a {
+        color: #f8f9fa;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: -1px 2px 5px rgb(29 37 45 / 20%);
+    }
+
+    iframe {
+        width: 900px;
     }
 }
 
-@media screen and (max-width: 930px) {
-
-    body {
-        overflow-x: hidden;
+@media screen and (max-width: 997px) {
+    .box-left {
+        max-width: 100%;
     }
 
-    .nav-link-box {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        min-height: 100vh;
-        width: 50%;
-        margin-left: auto;
-        background-color: #fff;
-        opacity: .95;
+    .box-left .popular-tour-title h3 {
+        margin-left: .2em;
+    }
+
+    .tour-images-box .tour-images img {
+        height: 200px;
+        width: 200px;
+        transition: transform .3s;
+    }
+
+    .box-right {
+        flex-direction: row;
+        margin-bottom: 6em;
+    }
+
+    .box-right-content {
+        padding: 3em;
+    }
+
+    .current-offer-img img {
+        height: 350px;
+    }
+
+    .current-offer-paragraph p {
+        font-weight: 500;
+        width: 40ch;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .navbar-collapse
+    {
+        background-color: #f8f8f8;
         z-index: 1000000;
-
-        transform: translateX(100%);
-        /* transition: transform .5s ease-in; */
     }
 
-    .nav-link-box li {
-        opacity: 1;
-    }
-
-    .logo {
-        margin: 3em 0 3em 3em;
-        width: 100%;
-    }
-
-    .main-logo, .booking-icon {
-        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(14%) hue-rotate(59deg) brightness(102%) contrast(100%);
-    }
-
-    .nav-content .nav-list-1 {
-        flex-direction: column;
-        align-items: left;
-        width: 100%;
-    }
-
-    .nav-list-1 li {
-        margin: 2.5em 2em;
-    }
-
-    .nav-title a, .nav-list-1 li a, .nav-list-2 li a {
+    #navbarToggle > ul > li > a {
         color: #212529;
+        font-size: 1rem;
+        padding: 1.5em;
     }
 
-    .nav-list-1 li a:hover {
-        border-top: 2px solid #212529;
-    }
-    
-    .links-thing:hover {
+    #navbarToggle > .navbar-nav > .nav-item > .nav-link:hover {
         border-top: 2px solid #212529;
     }
 
-    .nav-list-2 li a img {
-        color: #212529;
+    #navbarToggle > ul.navbar-nav.nav-links-middle > li.nav-item.guided-tours-link > a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .box-left {
+        max-width: 100%;
     }
 
-    .nav-list-2 {
-        width: 100%;
+    .box-left .popular-tour-title h3 {
+        margin-left: .2em;
+    }
+
+    .tour-images-box .tour-images img {
+        height: 250px;
+        width: 250px;
+        transition: transform .3s;
+    }
+
+    .box-right {
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+
+    .box-right-content {
+        padding: 3em;
+    }
+
+    .current-offer-img img {
+        height: 350px;
+        margin-top: 2em;
+    }
+
+    iframe {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .sub-container {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
     }
 
-    .nav-list-2 li {
-        margin: 1.4em 2em;
-        transform: translateY(-30px);
+    .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4,
+    .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4,
+    .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4,
+    .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 {
+        text-align: left;
     }
 
-    .nav-list-2 .booking-icon, .vert-line {
-        display: none;
+    .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4 > p {
+        width: 40ch;
     }
-
-    .vert-line {
-        border-left: 2px solid #212529;
-    }
-
-    /* burger menu */
-    .burger-menu {
-        display: block;
-    }
-}
-
-/* activate nav from off-screen */
-.nav-active {
-    transform: translateX(0%);
-}
-
-/* toggle burger menu to X */
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5, 6px);
-}
-.toggle .line2 {
-
-}
-.toggle .line3 {
-    transform: rotate(45deg)translate(-5, -6px);
-
 }
 
 @media screen and (max-width: 694px) {
@@ -130,11 +167,94 @@
     .hero-content {
         content: "";
         position: absolute;
-        bottom: 25%;
+        bottom: 35%;
         left: 10%;
         width: 100%;
-        height: 350px;
+        height: 300px;
     }
 
-    
+    .box-right-content {
+        padding: 1.5em;
+        margin: 3em 0;
+    }
+
+    .current-offer-paragraph p {
+        font-weight: 500;
+        width: 35ch;
+        font-size: .9rem;
+    }
+
+    iframe {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .box-left {
+        padding: 0em;
+    }
+
+    .box-left .popular-tour-title h3 {
+        margin-left: 1em;
+    }
+
+    .tour-images-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tour-images-box .tour-images img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .current-offer-img img {
+        height: 250px;
+        margin-top: 3em;
+    }
+
+    .box-right {
+        flex-direction: row;
+        width: 93%;
+    }
+
+    .current-offer-paragraph p {
+        font-weight: 500;
+        width: 32ch;
+        font-size: .9rem;
+    }
+
+    .current-offer-button .offer-button {
+        width: 230px;
+    }
+
+    hr {
+        margin-top: 3em;
+    }
+
+    .dest-content {
+        width: 450px;
+    }
+
+    .map-content {
+        width: 450px;
+    }
+
+    iframe {
+        width: 450px;
+    }
+
+    .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4,
+    .col-md-2.col-lg-2.col-xl-2.mx-auto.mb-4,
+    .col-md-3.col-lg-2.col-xl-2.mx-auto.mb-4,
+    .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 {
+        text-align: center;
+    }
+
+    .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4 > p {
+        width: 40ch;
+        margin: auto;
+    }
+
 }

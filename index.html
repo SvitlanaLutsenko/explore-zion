@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="/css/media-queries/mq-main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/media-queries/mq.css">
+    <link href="fontawesome-free-5.15.1-web/css/all.min.css" rel="stylesheet"><!--load all styles -->
+
+    <!-- Lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,71 +24,347 @@
     <title>Explore Zion</title>
 </head>
 <body>
-    <div class="container">
-        <header class="hero">
-            <nav class="nav-content">
+<div class="container-fluid">
 
-                 <!-- hamburger menu -->
-                 <div class="burger-menu">
-                    <div class="line1 toggle"></div>
-                    <div class="line2 toggle"></div>
-                    <div class="line3 toggle"></div>
+    <!--------------------------
+      hero & navigation section
+    ---------------------------->
+    <header class="hero">
+        <!-- navigation bar w/ bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <!--  show this only on mobile to medium screens  -->
+            <a class="navbar-brand" href="#">
+                <img src="img/icons/main-logo.svg" width="30" height="30" class="p-d-inline-block align-top" alt="">
+                <h2>Explore Zion</h2>
+            </a>
+
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--  use flexbox utility classes to change how the child elements are justified  -->
+            <div class="collapse navbar-collapse justify-content-between nav-link-container" id="navbarToggle">
+
+                <!--   show this only lg screens and up   -->
+                <span></span>
+
+                <ul class="navbar-nav nav-links-middle">
+                    <li class="nav-item guided-tours-link">
+                        <a class="nav-link active" href="#">Guided Tours In Zion</a>
+                    </li>
+                    <li class="nav-item visit-us-link">
+                        <a class="nav-link" href="#">Visit Us</a>
+                    </li>
+                    <li class="nav-item about-us-link">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav nav-links-right">
+                    <li class="nav-item bookings-link">
+                        <a class="nav-link" href="#">Bookings
+                        </a>
+                    </li>
+                    <li class="nav-item account-link">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- hero-content  -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Zion Park <br/>Adventure Agency
+            </h1>
+            <p class="hero-desc">
+                Planning your first visit to Zion? Let us help to make your trip safe and astounding. We offer a broad and exciting range of walking tours in Zion for all skill levels.
+            </p>
+            <a href="#" target="_blank" class="hero-button">Private Guided Tours In Zion</a>
+        </div>
+    </header>
+
+    <!----------------------------------
+      main section - most popular tours
+    ------------------------------------>
+    <main class="main-content">
+        <section class="popular-tour-container">
+
+            <!-- left side -->
+            <div class="box-left">
+                <div class="popular-tour-title">
+                    <h3>Our Most Popular Tours</h3>
                 </div>
 
-                <div class="nav-link-box nav-active">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/icons/main-logo.svg" alt="mountain icons" class="main-logo">
+                <div class="tour-images-box">
+                    <div class="tour-image-1 tour-images">
+                        <a href="#">
+                            <img src="img/home/tour-img-1.png" alt="Canyons tour" width="200px" height="200px">
                         </a>
-                        <h2 class="nav-title">
-                            <a href="index.html">
-                                Explore <br/>Zion
-                            </a>
-                        </h2>
+                        <a href="#">
+                            <h6 class="tour-heading">
+                                Zion Narrows Day Hikes >
+                            </h6>
+                        </a>
                     </div>
 
-                    <ul class="nav-list-1">
-                    <li>
-                        <a href="#">Guided Tours In Zion</a>
-                    </li>
-                    <li>
-                        <a href="#">Plan Your Visit</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    </ul>
+                    <div class="tour-image-2 tour-images">
+                        <a href="#">
+                            <img src="img/home/tour-img-2.png" alt="Mountain tours" width="200px" height="200px">
+                        </a>
+                        <a href="#">
+                            <h6 class="tour-heading">
+                                Angels Landing Day Hike >
+                            </h6>
+                        </a>
+                    </div>
 
-                    <ul class="nav-list-2">
-                        <li>
-                            <img src="img/icons/booking-icon.svg" alt="shopping card" class="booking-icon">
-                            <a href="#" class="links-thing booking">
-                                  Bookings
-                            </a>
-                        </li>
-                        <li>
-                            <span class="vert-line"></span>
-                        </li>
-                        <li>
-                            <a href="#"  class="links-thing">Account
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="tour-image-3 tour-images">
+                        <a href="">
+                            <img src="img/home/tour-img-3.png" alt="Jeep tours" width="200px" height="200px">
+                        </a>
+                        <a href="#">
+                            <h6 class="tour-heading">
+                                Zion Jeep Tours >
+                            </h6>
+                        </a>
+                    </div>
+
+                    <div class="tour-image-4 tour-images">
+                        <a href="">
+                            <img src="img/home/tour-img-4.png" alt="Hike tours" width="200px" height="200px">
+                        </a>
+                        <a href="#">
+                            <h6 class="tour-heading">
+                                One Perfect Day in Zion
+                            </h6>
+                        </a>
+                    </div>
+
                 </div>
-            </nav>
-
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Zion Park <br/>Adventure Agency
-                </h1>
-                <p class="hero-desc">
-                    Planning your first visit to Zion? Let us help to make your trip safe and astounding. We offer a broad and exciting range of walking tours in Zion for all skill levels.
-                </p>
-                <a href="#" target="_blank" class="hero-button">Private Guided Tours In Zion</a>
-                
             </div>
-        </header>
-    </div>
-    <script src="/js/scripts.js"></script>
+
+            <!-- right-side -->
+            <div class="box-right">
+                <div class="current-offer-img">
+                    <img src="img/home/tour-img-5.png" alt="" width="" height="300px">
+                </div>
+
+                <div class="box-right-content">
+                    <div class="current-offer-title">
+                        <h3>Current Offers</h3>
+                    </div>
+
+                    <div class="current-offer-paragraph">
+                        <p>Whether it's hiking, camping, canyoneering, or simply driving, there's a lot to do in Zion. Start planning your next trip with us today!</p>
+                    </div>
+
+                    <div class="current-offer-button">
+                        <a href="#" target="_blank" class="offer-button">Tours available for booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- horizontal line -->
+    <hr>
+
+    <!-----------------------------
+      destination gallery section
+    ------------------------------->
+    <section class="dest-gallery-container">
+        <!-- dest-description -->
+        <div class="dest-content">
+            <h2>Destination Gallery</h2>
+            <p>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-1.png" data-lightbox="gallery-img" data-title="Zion Mountain">
+                        <img src="img/home/dest-gal-1.png" alt="zion mountain">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-2.png" data-lightbox="gallery-img" data-title="Zion Canyons">
+                        <img src="img/home/dest-gal-2.png" alt="Zion Canyons">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-3.png" data-lightbox="gallery-img" data-title="Zion Water Canyons">
+                        <img src="img/home/dest-gal-3.png" alt="Zion Water Canyons">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-4.png" data-lightbox="gallery-img" data-title="Zion Mountain Ridge">
+                        <img src="img/home/dest-gal-4.png" alt="Zion Mountain Ridge">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-5.png" data-lightbox="gallery-img" data-title="Van Camping">
+                        <img src="img/home/dest-gal-5.png" alt="Van Camping">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-6.png" data-lightbox="gallery-img" data-title="Zion Fall Trees">
+                        <img src="img/home/dest-gal-6.png" alt="Zion Fall Trees">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="img/home/dest-gal-7.png" data-lightbox="gallery-img" data-title="Zion Mountains in Winter">
+                        <img src="img/home/dest-gal-7.png" alt="Zion Mountains in Winter">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- horizontal line -->
+    <hr>
+
+    <!----------------------------------
+      map of zion national park section
+    ------------------------------------>
+    <section class="map-container">
+        <div class="map-content">
+            <h2>We Are On The Map</h2>
+            <p>Explore Zion is nestled away somewhere deep within the vastness of Zion National Park. Our headquarters may be hidden within a rock, a sand castle, or even a gigantic Engelmann Prickly Pear cactus! Either way, we are always available upon your request.</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203063.40265533244!2d-113.18331938261385!3d37.32200958242842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80caead08844f8d9%3A0x7c2e3a15aa3656f5!2sZion%20National%20Park!5e0!3m2!1sen!2sus!4v1607657678510!5m2!1sen!2sus" width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <!-----------------------
+      subscribe now - section
+    ------------------------->
+    <section class="sub-container">
+        <h2>Subscribe For The Latest News & Offers</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="explorezion@email.com" aria-label="Recipient's username">
+            <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------
+      footer - section
+    ------------------------->
+
+    <footer class="page-footer font-small unique-color-dark">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="font-weight-bold footer-heading">Explore Zion</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>Want to start planning your first visit to Zion? Let us give you a hand. All you have to do is bring a good attitude, your camera, and water!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Information</h6>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <a href="#!">About</a>
+                    </p>
+                    <p>
+                        <a href="#!">Explore</a>
+                    </p>
+                    <p>
+                        <a href="#!">Travel</a>
+                    </p>
+                    <p>
+                        <a href="#!">Blog</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Helpful Links</h6>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <a href="#!">Destinations</a>
+                    </p>
+                    <p>
+                        <a href="#!">Support</a>
+                    </p>
+                    <p>
+                        <a href="#!">Terms & Conditions</a>
+                    </p>
+                    <p>
+                        <a href="#!">Privacy</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <i class="fas fa-home mr-3"></i>
+                        1 Zion Park Blvd.
+                        State Route 7
+                        Springdale, UT 84767</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> explorezion@example.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 91 510 9375 2020</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 91 510 9375 2121</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+    </footer>
+
+</div> <!-- container-fluid-closure-->
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- lightbox -->
+<script src="js/lightbox-plus-jquery.js"></script>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>

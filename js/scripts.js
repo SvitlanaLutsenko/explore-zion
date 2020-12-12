@@ -1,16 +1,43 @@
-const navSlide = () => {
-    const burger = document.querySelector(".burger-menu");
-    const nav = document.querySelector(".nav-link-box");
+	var appendNumber = 4;
+    var prependNumber = 1;
 
-    burger.addEventListener('click', () => {
-
-         // toggle nav
-        nav.classList.toggle('nav-active');
-
-        // burger animation
-        // burger.classList.toggle('toggle');
-        
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      centeredSlides: false,
+      loop: true,
+      spaceBetween: -410,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
     });
-}
 
-navSlide();
+    document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+        ]);
+    });
+
+    document.querySelector('.prepend-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    });
+
+    document.querySelector('.append-slide').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
+    });
+
+    document.querySelector('.append-2-slides').addEventListener('click', function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+        '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+        ]);
+    });
