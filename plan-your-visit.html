@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/media-queries/mq.css">
+    <link href="fontawesome-free-5.15.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/plan-your-visit.css">
+    <!--load all styles -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <title>Explore Zion - Plan Your Visit</title>
+</head>
+<body>
+<div class="container-fluid">
+
+    <!--------------------------
+      hero & navigation section
+    ---------------------------->
+    <header class="hero">
+        <!-- navigation bar w/ bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <!--  show this only on mobile to medium screens  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/icons/main-logo.svg" width="30" height="30" class="p-d-inline-block align-top"
+                     alt="Home Page">
+                <h2>Explore Zion</h2>
+            </a>
+
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--  use flexbox utility classes to change how the child elements are justified  -->
+            <div class="collapse navbar-collapse justify-content-between nav-link-container" id="navbarToggle">
+
+                <!--   show this only lg screens and up   -->
+                <span></span>
+
+                <ul class="navbar-nav nav-links-middle">
+                    <li class="nav-item guided-tours-link">
+                        <a class="nav-link" href="guide-tours.html">Guided Tours In Zion</a>
+                    </li>
+                    <li class="nav-item visit-us-link">
+                        <span class="nav-link selected">Plan Your Visit</span>
+                    </li>
+                    <li class="nav-item about-us-link">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav nav-links-right">
+                    <li class="nav-item bookings-link">
+                        <a class="nav-link" href="#">Bookings
+                        </a>
+                    </li>
+                    <li class="nav-item account-link">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="p-plan-your-visit">
+        <div class="container">
+            <section class="s-suggestions">
+                <div class="row g-0">
+                    <div class="col-lg">
+                        <div class="columntext">
+                            <h2 class="s-title">Short Hikes - What to Bring</h2>
+                            <ul>
+                                <li>Clothes for hiking</li>
+                                <li>Camera (and bag so you can put away the camera for hike)</li>
+                                <li>Closed toed shoes that can get wet for the Narrows hike</li>
+                                <li>Food for your entire stay (food in the park and nearby town is pretty expensive, so
+                                    if you’re on a budget, plan ahead and bring all the groceries you’ll need)
+                                </li>
+                                <li>Sunscreen</li>
+                                <li>Water bottle</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <img src="img/plan-your-visit/trip_2.png">
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md hide-on-devices">
+                        <img src="img/plan-your-visit/trip_3.png">
+                    </div>
+                    <div class="col-md">
+                        <div class="columntext">
+                            <h2 class="s-title">Where to Stay </h2>
+                            <p><b>Camping in Zion</b><br>
+                                Zion has <a href="#">three campgrounds</a>. Watchman Campground takes reservations from
+                                March through late November.<
+                            </p>
+                            <p>
+                                <b>Campgrounds near the park</b><br>
+                                There are plenty of campgrounds nearby Zion and lots of spots inside the park as well.
+                                Be sure to book ahead with the <a href="#">National Park Service</a>. $30 per night for
+                                an electronic hookup site, $20 for a tent-only site, and $50 for a group campsite.
+                            </p>
+                            <p>
+                                <b>Nearbly hotels</b><br>
+                                When we are in the states, we use <a href="#">Booking.com</a> to find the best deals on
+                                hotels. There are plenty of hotels in Springdale (the town south of the park) so search
+                                there first. If you are only going to Zion for the day and prefer to stay in a bigger
+                                town, St. George, Utah (1 hour away) is a good option.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg">
+                        <div class="columntext">
+                            <h2 class="s-title">How to avoid crowds in Zion</h2>
+                            <p>
+                                Our biggest tip to avoid the crowds is to get started early. The lines for the shuttle
+                                get exponentially long after 7:30 a.m. and the hikes get crowded as well. To avoid
+                                feeling like you’re in Disney World, start early in the morning, then take a break
+                                during the busy afternoon. Head out again in the early evening for that Golden Hour
+                                glow.
+                            </p>
+                            <p>
+                                The great part of this strategy is that in addition to avoiding crowds, you’ll avoid the
+                                hours of direct sunlight during your hikes. Since you’re hiking in a canyon, you’ll be
+                                shaded in the early morning hours as well as the late afternoon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <img src="img/plan-your-visit/trip_4.png">
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md hide-on-devices">
+                        <img src="img/plan-your-visit/trip_5.png">
+                    </div>
+                    <div class="col-md">
+                        <div class="columntext">
+                            <h2 class="s-title">Things To Do</h2>
+                            <ul>
+                                <li>
+                                    <b>Backpacking.</b> Get <a href="#">trail and campsite descriptions</a> and
+                                    find out how to obtain a backpacking permit in Zion.
+                                </li>
+                                <li>
+                                    <b>Bicycling.</b> The Pa'rus Trail and Zion Canyon Scenic Drive are
+                                        accessible to bicycles. The shuttles have bike racks.
+                                </li>
+                                <li>
+                                    <b>Birding.</b> Zion is home to 291 species of birds. Bird checklists are
+                                    available at the visitor centers.
+                                </li>
+                                <li>
+                                    <b>Canyoneering.</b> Learn about <a href="#">canyoneering in Zion and how to
+                                    obtain a permit</a>.
+                                </li>
+                                <li>
+                                    <b>Climbing.</b> Find out about <a href="#">climbing in Zion and how to
+                                    obtain a permit </a>for overnight bivouacs.
+                                </li>
+                                <li>
+                                    <b>River Trips.</b> Find out about <a href="#">boating in the Virgin
+                                    River</a>. Permits are issued when the flow rate is over 150 CFS.
+
+                                </li>
+                                <li>
+                                    <b>Horseback riding.</b> Guided trips are available March through October.
+                                    Call 1-435-679-8665 or visit <a href="#">www.canyonrides.com</a>.
+                                </li>
+                                <li><b>Sunset and Stargazing.</b> Check <a href="#">where to view sunset and the
+                                    night sky</a>, plus tips for nighttime safety.</li>
+                                <li><b>Book Guided Tours.</b> We can’t wait to share the beauty and wonder of
+                                    one of the most stunning parks on the planet with you and your loved ones!</li>
+                            </ul>
+                            <br>
+                            <p><a class="button" href="#">CHECK OUR GUIDE TOURS</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="map-container">
+                <div class="map-content">
+                    <h2 class="s-title">We Are On The Map</h2>
+                    <p>Explore Zion is nestled away somewhere deep within the vastness of Zion National Park. Our
+                        headquarters may be hidden within a rock, a sand castle, or even a gigantic Engelmann Prickly
+                        Pear cactus! Either way, we are always available upon your request.</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203063.40265533244!2d-113.18331938261385!3d37.32200958242842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80caead08844f8d9%3A0x7c2e3a15aa3656f5!2sZion%20National%20Park!5e0!3m2!1sen!2sus!4v1607657678510!5m2!1sen!2sus"
+                        width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+            </section>
+        </div>
+
+    </main>
+
+
+    <!----------------------------------
+      map of zion national park section
+    ------------------------------------>
+
+
+    <!-----------------------
+      subscribe now - section
+    ------------------------->
+    <section class="sub-container">
+        <h2>Subscribe For The Latest News & Offers</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="explorezion@email.com"
+                   aria-label="Recipient's username">
+            <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------
+      footer - section
+    ------------------------->
+
+    <footer class="page-footer font-small unique-color-dark">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="font-weight-bold footer-heading">Explore Zion</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>Want to start planning your first visit to Zion? Let us give you a hand. All you have to do is
+                        bring a good attitude, your camera, and water!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Information</h6>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <a href="#!">About</a>
+                    </p>
+                    <p>
+                        <a href="#!">Explore</a>
+                    </p>
+                    <p>
+                        <a href="#!">Travel</a>
+                    </p>
+                    <p>
+                        <a href="#!">Blog</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Helpful Links</h6>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <a href="#!">Destinations</a>
+                    </p>
+                    <p>
+                        <a href="#!">Support</a>
+                    </p>
+                    <p>
+                        <a href="#!">Terms & Conditions</a>
+                    </p>
+                    <p>
+                        <a href="#!">Privacy</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                    <p>
+                        <i class="fas fa-home mr-3"></i>
+                        1 Zion Park Blvd.
+                        State Route 7
+                        Springdale, UT 84767</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> explorezion@example.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 91 510 9375 2020</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 91 510 9375 2121</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+    </footer>
+
+</div> <!-- container-fluid-closure-->
+
+</body>
+</html>

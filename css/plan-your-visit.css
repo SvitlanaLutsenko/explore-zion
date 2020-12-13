@@ -1,0 +1,25 @@
+
+img {
+    max-width: 100%;
+}
+
+.columntext{
+    padding: 10% 15% 3%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .columntext{
+        padding: 5% 10%;
+    }
+    .hide-on-devices {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .p-plan-your-visit {
+        font-size: 14px;
+    }
+}
