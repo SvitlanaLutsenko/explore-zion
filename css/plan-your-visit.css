@@ -3,15 +3,61 @@ img {
     max-width: 100%;
 }
 
-.columntext{
-    padding: 10% 15% 3%;
+.s-helpful-links {
+    margin: 10% auto;
+}
+
+.block-inner {
+    position: relative;
+    padding-left: 60px;
+    vertical-align: center;
+}
+
+.block-inner:before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.block-inner.driving:before {
+    background-image: url("../img/plan-your-visit/driving.png");
+}
+
+.block-inner.condition:before {
+    background-image: url("../img/plan-your-visit/condition.png");
+}
+
+.block-inner.buss:before {
+    background-image: url("../img/plan-your-visit/buss.png");
+}
+
+.block-inner.hours:before {
+    background-image: url("../img/plan-your-visit/hours.png");
+}
+
+.block-inner.fee:before {
+    background-image: url("../img/plan-your-visit/fee.png");
 }
 
 
+.b-title {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 1200px) {
-    .columntext{
+    .columntext {
         padding: 5% 10%;
     }
+
     .hide-on-devices {
         display: none;
     }
