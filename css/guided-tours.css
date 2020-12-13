@@ -1,0 +1,103 @@
+.hero.guided-tours-all {
+    width: 100%;
+    height: 35vw;
+    background: url(../img/guided-tours/hero-banner-summer.jpg) no-repeat center right;
+    background-size: cover;
+}
+
+.hero.guided-tours-winter {
+    width: 100%;
+    height: 35vw;
+    background: url(../img/guided-tours/hero-banner-winter.jpg) no-repeat center right;
+    background-size: cover;
+}
+
+.s-product-list {
+    margin: 10% auto;
+}
+
+.p-guide-tours .label .nav-link,
+.p-guide-tours .btn.label {
+    padding-left: 0;
+    cursor: default;
+    font-weight: bold;
+}
+
+
+.p-guide-tours .btn:focus,
+.p-guide-tours .btn:active {
+    box-shadow: none;
+}
+
+.p-guide-tours .nav-pills .nav-link {
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.p-guide-tours .nav-pills .nav-link.active,
+.p-guide-tours .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #009688;
+    border-radius: 20px;
+}
+
+.p-guide-tours .nav-pills a {
+    color: #009688;
+}
+
+
+.p-guide-tours .card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.p-guide-tours  .card.teal {
+    background-color: #057167;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+.p-guide-tours  .card.teal:before {
+    content: "";
+    display: block;
+    width: 48%;
+    height: 24%;
+    bottom: -3%;
+    right: 1%;
+    position: absolute;
+    background: url("../img/icons/main-logo.svg") no-repeat center top;
+    background-size: 100% auto;
+}
+.p-guide-tours  .card.teal .card-body {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.p-guide-tours  .card.teal a {
+    color: inherit;
+}
+.p-guide-tours  .card.teal a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .p-guide-tours .card-body,
+    .p-guide-tours .card-body p,
+    .p-guide-tours .card-body ul {
+        font-size: 0.9em;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .p-guide-tours  .card.teal:before {
+        display: none;
+    }
+}
+
+
+
+
