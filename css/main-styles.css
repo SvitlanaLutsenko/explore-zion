@@ -40,6 +40,40 @@ p {
 }
 
 /*************************
+LAYOUT / REUSABLE COMPONENTS
+**************************/
+
+.button {
+    background-color: #009688;
+    border-radius: 20px;
+    color: #f8f9fa;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.5);
+}
+
+.button:hover {
+    color: #f8f9fa;
+}
+
+.button.accent {
+    border-radius: 20px 20px 2px 20px;
+}
+
+.button.accent:hover {
+    border-radius: 20px;
+    transition: all .6s ease-in-out;
+}
+
+
+/*************************
 HERO / LANDING PAGE SECTION
 **************************/
 /* Use psuedo class to apply filter onto image otherwise the brightness filter will also apply to text */
@@ -302,7 +336,7 @@ HERO / LANDING PAGE SECTION
     text-decoration: none;
     text-transform: uppercase;
     width: 255px;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 0.50);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.5);
 }
 
 .offer-button:hover {

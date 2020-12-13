@@ -21,6 +21,91 @@
 }
 
 
+/* Our Team */
 
+.s-ourteam {
+    margin: 10% auto;
+}
 
+.s-ourteam .section-header {
+    max-width: 640px;
+    margin: 10% auto 20px;
+    text-align: center;
+}
 
+.s-title {
+    padding-bottom: .8em;
+}
+
+.s-ourteam .guide {
+    text-align: center;
+}
+
+.s-ourteam .b-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.img-text {
+    max-width: 350px;
+    margin: auto;
+}
+
+.s-ourteam .img-area{
+    margin: 20px auto;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.jomaree .img-area{
+    background-image: url(../img/about-us/Team-JomareeLawsin.png)
+}
+.svitlana .img-area{
+    background-image: url(../img/about-us/Team-SvitlanaLutsenko.png)
+}
+.kha .img-area{
+    background-image: url(../img/about-us/Team-KhaNguyen.png)
+}
+
+.s-ourteam .button-inner {
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+
+    .p-about-us {
+        font-size: 14px;
+    }
+
+    .s-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+    .s-whoweare .text-inner {
+        padding: 8%;
+    }
+    .guide {
+        display: flex;
+        flex-direction: row;
+    }
+    .s-ourteam .img-area {
+        width: 80px;
+        height: 80px;
+    }
+    .s-ourteam .img-text {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .s-ourteam .b-title {
+        margin-bottom: 0;
+    }
+    .s-ourteam .section-header {
+        text-align: left;
+    }
+}
