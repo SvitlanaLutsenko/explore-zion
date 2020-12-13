@@ -3,6 +3,10 @@ img {
     max-width: 100%;
 }
 
+.columntext {
+    padding: 15%;
+}
+
 .s-helpful-links {
     margin: 10% auto;
 }
