@@ -99,7 +99,7 @@ HERO / LANDING PAGE SECTION
     text-decoration: none;
     text-transform: uppercase;
     width: 285px;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 0.50);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.5);
 }
 
 .hero-button:hover {
@@ -130,14 +130,14 @@ HERO / LANDING PAGE SECTION
     align-items: flex-end;
     font-size: 1.9rem;
     padding-left: .2em;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 0.10);
+    text-shadow: 1px 1px 3px rgba(57, 81, 107, 0.75);
 }
 
 #navbarToggle > ul > li {
     padding: .4em;
 }
 
-#navbarToggle > ul > li > a {
+#navbarToggle .nav-link {
     color: #f8f9fa;
     font-family: 'Open Sans', sans-serif;
     font-size: .9rem;
@@ -145,29 +145,36 @@ HERO / LANDING PAGE SECTION
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 20%);
+    text-shadow: 1px 1px 3px rgba(57, 81, 107, 0.75);
 }
 
-#navbarToggle > .navbar-nav > .nav-item > .nav-link:hover {
+#navbarToggle .nav-link:hover,
+#navbarToggle .nav-link.selected {
     border-top: 2px solid #f8f9fa;
     margin-top: -2px;
 }
 
-.guided-tours-link a::before {
+#navbarToggle .nav-link.selected {
+    cursor: default;
+}
+
+
+
+.guided-tours-link .nav-link:before {
     content: "\f5eb";
     font-family: "Font Awesome 5 Free";
     padding: 0 10px 0 0;
     font-size: 1.2rem;
 }
 
-.visit-us-link a::before {
+.visit-us-link .nav-link:before {
     content: "\f4d7";
     font-family: "Font Awesome 5 Free";
     padding: 0 10px 0 0;
     font-size: 1.2rem;
 }
 
-.about-us-link a::before {
+.about-us-link .nav-link:before {
     content: "\f1e5";
     font-family: "Font Awesome 5 Free";
     padding: 0 10px 0 0;
@@ -370,7 +377,7 @@ body > div > hr {
     bottom: 40px !important;
 }
 
-swiper-button-prev {
+.swiper-button-prev {
     background-color: white;
 }
 
