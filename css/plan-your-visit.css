@@ -57,6 +57,21 @@ img {
     margin-bottom: 0;
 }
 
+.s-getmap {
+    background-color: #674A48;
+    padding: 5% 0;
+    color: white;
+    margin: 10% auto 6%;
+}
+
+.img-map {
+    margin-bottom: 5%;
+}
+
+.map-description {
+   align-self: center;
+}
+
 @media screen and (max-width: 1200px) {
     .columntext {
         padding: 5% 10%;
