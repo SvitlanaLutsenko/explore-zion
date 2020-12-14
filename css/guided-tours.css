@@ -50,6 +50,66 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.p-guide-tours .card-img-top {
+    overflow: hidden;
+}
+
+.p-guide-tours .list-group-item,
+.p-guide-tours .card>.list-group{
+    border: none;
+}
+
+.p-guide-tours .list-group-item {
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 0.85em;
+}
+
+
+.p-guide-tours .card .info-line:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    bottom: -4px;
+    position: relative;
+}
+
+.p-guide-tours .card .info-line.group:before {
+    background-image: url("../img/icons/icon-small-group.svg");
+}
+.p-guide-tours .card .info-line.duration:before {
+    background-image: url("../img/icons/icon-clock.svg");
+}
+.p-guide-tours .card .info-line.gear:before {
+    background-image: url("../img/icons/icon-hicking-gear.svg");
+}
+
+.p-guide-tours .card {
+    color: #212529;
+    text-decoration: none;
+}
+
+.p-guide-tours .card-img-top img {
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.p-guide-tours .card:hover  {
+   cursor: pointer;
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.5);
+}
+
+.p-guide-tours .card:hover .card-img-top img  {
+    transform: scale(1.2);
+    transition-duration: 2s;
 }
 
 .p-guide-tours  .card.teal {
@@ -70,17 +130,103 @@
     background: url("../img/icons/main-logo.svg") no-repeat center top;
     background-size: 100% auto;
 }
-.p-guide-tours  .card.teal .card-body {
+
+.p-guide-tours  .card.brown {
+    background-color: #674A48;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+.p-guide-tours  .card.brown:before {
+    content: "";
+    display: block;
+    width: 43%;
+    height: 50%;
+    bottom: 4%;
+    right: -1%;
+    position: absolute;
+    background: url("../img/guided-tours/snowman.png") no-repeat center top;
+    background-size: 100% auto;
+}
+
+
+.p-guide-tours  .card.teal .card-body,
+.p-guide-tours  .card.brown .card-body{
     justify-content: center;
     display: flex;
     flex-direction: column;
     padding-left: 10%;
 }
-.p-guide-tours  .card.teal a {
+.p-guide-tours  .card.teal a,
+.p-guide-tours  .card.brown a{
     color: inherit;
 }
-.p-guide-tours  .card.teal a:hover {
+.p-guide-tours  .card.teal a:hover,
+.p-guide-tours  .card.brown a:hover {
     text-decoration: none;
+}
+
+.p-guide-tours .card-body {
+    position: relative;
+}
+
+.p-guide-tours .card-body .label-season {
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    padding: 3px 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+}
+
+.p-guide-tours .card-body .label-season.summer {
+    background-color: #e6b400;
+}
+
+.p-guide-tours .card-body .label-season.fall {
+    background-color: #de8500;
+}
+
+.p-guide-tours .card-body .label-season.year {
+    background-color: #009688;
+}
+.p-guide-tours .card-body .label-season.winter {
+    background-color: #399ad2;
+}
+
+.p-guide-tours  .card .price-inner {
+    text-align: right;
+}
+
+.p-guide-tours  .card .price {
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.2;
+    display: block;
+}
+.p-guide-tours .reviews-stars {
+    width: 90px;
+    margin-bottom: 4px;
+}
+.p-guide-tours .reviews-inner {
+    align-items: flex-end;
+}
+
+.p-guide-tours  .card .reviews,
+.p-guide-tours  .card .price-label {
+    font-size: 0.85em;
+    line-height: 1.1;
+    display: block;
+    white-space: nowrap;
+}
+
+.p-guide-tours .row-cols-md-3>.col.two-cols {
+    width: 66.66666% !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -90,11 +236,26 @@
         font-size: 0.9em;
         line-height: 1.3;
     }
+    .p-guide-tours  .card .price {
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+    .p-guide-tours .reviews-stars {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-guide-tours .row-cols-md-3>.col.two-cols {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    .p-guide-tours  .card.teal:before {
+    .p-guide-tours  .card.teal:before,
+    .p-guide-tours  .card.brown:before{
         display: none;
+        min-height: 200px;
     }
 }
 
