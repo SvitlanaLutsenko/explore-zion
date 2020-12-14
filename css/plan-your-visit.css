@@ -17,6 +17,10 @@ img {
     vertical-align: center;
 }
 
+.s-helpful-links .block-inner:hover {
+    cursor: pointer;
+}
+
 .block-inner:before {
     content: "";
     display: inline-block;
@@ -47,6 +51,19 @@ img {
 
 .block-inner.fee:before {
     background-image: url("../img/plan-your-visit/fee.png");
+}
+
+.s-helpful-links .block-inner:hover  {
+    color: #009688;
+}
+
+.s-helpful-links .modal-dialog.ready {
+    max-width: 65%!important;
+}
+
+.s-helpful-links .modal-body {
+    font-size: 14px;
+    color: #212529;
 }
 
 
@@ -81,6 +98,16 @@ img {
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .s-helpful-links .modal-dialog.ready {
+        margin: auto;
+        max-width: 85%!important;
+    }
+}
+
+
+
 
 @media screen and (max-width: 620px) {
 

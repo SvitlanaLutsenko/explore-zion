@@ -77,21 +77,18 @@
         <section class="s-helpful-links container">
             <div class="row">
                 <div class="col-md">
-                    <div class="block-inner driving">
+                    <div class="block-inner driving" data-bs-toggle="modal" data-bs-target="#drivingDirectionsModal">
                         <h3 class="b-title">Driving Directions</h3>
-                        <p>Zion National Park is located on State Route 9 in southwest Utah.&nbsp;></p>
-                        <!--                                <a href="javascript:void(0);"-->
-                        <!--                                   onClick=window.open("map.html","Ratting","width=1004,height=670,left=150,top=200,toolbar=0,status=0,");>Click-->
-                        <!--                                    here to see map</a>-->
-                    </div>
-                    <div class="block-inner condition">
+                        <p>Zion National Park is located on State Route 9 in southwest Utah.&nbsp;→</p>
+                         </div>
+                    <div class="block-inner condition" data-bs-toggle="modal" data-bs-target="#underConstructionModal">
                         <h3 class="b-title">Current Conditions</h3>
                         <p>
                             Find typical and current weather conditions in Zion, as well as the flow rate of the
                             Virgin River and the flash flood potential forecast.&nbsp;>
                         </p>
                     </div>
-                    <div class="block-inner hours">
+                    <div class="block-inner hours" data-bs-toggle="modal" data-bs-target="#underConstructionModal">
                         <h3 class="b-title">Operating Hours and Seasons</h3>
                         <p>
                             Zion National Park is open all year.&nbsp;>
@@ -99,18 +96,274 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="block-inner fee">
+                    <div class="block-inner fee" data-bs-toggle="modal" data-bs-target="#underConstructionModal">
                         <h3 class="b-title">Fees and Passes</h3>
                         <p>
                             All park visitors are required to purchase a recreational use pass upon entering Zion
                             National Park.&nbsp;>
                         </p>
                     </div>
-                    <div class="block-inner buss">
+                    <div class="block-inner buss" data-bs-toggle="modal" data-bs-target="#underConstructionModal">
                         <h3 class="b-title">Shuttle Information</h3>
                         <p>
                             Learn about the Zion Canyon Shuttle Service.&nbsp;>
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="drivingDirectionsModal" tabindex="-1" aria-labelledby="drivingDirectionsLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog ready modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Driving Directions</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="product-list-filters nav nav-tabs mb-3" id="pills-tab"
+                                role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="tab"
+                                       href="#car-map" role="tab" aria-controls="car-map"
+                                       aria-selected="false">Arriving By Car</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-avia-map-tab" data-bs-toggle="tab"
+                                       href="#avia-map"
+                                       role="tab" aria-controls="avia-map" aria-selected="false">Arriving By
+                                        Plane</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-charging-tab" data-bs-toggle="tab"
+                                       href="#charging"
+                                       role="tab" aria-controls="charging" aria-selected="false">Electric
+                                        Vehicle Charging</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="car-map" role="tabpanel"
+                                     aria-labelledby="pills-profile-tab">
+                                    <div class="row">
+                                        <p>
+                                            Zion National Park is located on State Route 9 in Springdale,
+                                            Utah.
+                                            All mileages below represent the distance from the Zion Canyon
+                                            Visitor Center.
+                                        </p>
+                                        <div class="col-lg-8">
+
+                                            <img src="img/plan-your-visit/map.png" alt="Map Preview">
+                                            <p>
+                                                <a href="#" class="button">
+                                                    DOWNLOAD VERSION FOR PRINTING
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+
+                                            <p><b>
+                                                From Las Vegas, Nevada (163 miles), Mesquite, Nevada (80
+                                                miles), and Saint George, Utah (40 miles):
+                                            </b></p>
+                                            <ul>
+                                                <li>Interstate 15 North</li>
+                                                <li>Exit 16 - Right on State Route 9 East (33 miles)</li>
+                                                <li>Right to stay on State Route 9 East in La Verkin, Utah
+                                                    (20
+                                                    miles)
+                                                </li>
+                                                <li>Stay on State Route 9 East into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is ahead on the right.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                <b>From Salt Lake City, Utah (307 miles) and Cedar City,
+                                                    Utah
+                                                    (57 miles):</b>
+                                            </p>
+                                            <ul>
+                                                <li>Interstate 15 South</li>
+                                                <li>Exit 27 - Left on State Route 17 South (26 miles)</li>
+                                                <li>Left on State Route 9 East in La Verkin, Utah (20
+                                                    miles)
+                                                </li>
+                                                <li>Stay on State Route 9 East into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is ahead on the right.
+                                                </li>
+                                            </ul>
+
+                                            <p><b>From Bryce Canyon National Park, Utah (86
+                                                miles):</b></p>
+                                            <ul>
+                                                <li>State Route 63 North</li>
+                                                <li>Left on State Route 12 West (81 miles)</li>
+                                                <li>Left on US Route 89 South (67 miles)</li>
+                                                <li>Right on State Route 9 West in Mount Carmel Junction,
+                                                    Utah
+                                                    (24 miles)
+                                                </li>
+                                                <li>
+                                                    Stay on State Route 9 West into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is 12 miles ahead on the left.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md">
+
+                                            <p>
+                                                <b>
+                                                    From Page, Arizona (118 miles) and Kanab, Utah (45
+                                                    miles):
+                                                </b>
+                                            </p>
+                                            <ul>
+                                                <li>US Route 89 North</li>
+                                                <li>Left on State Route 9 West in Mount Carmel Junction,
+                                                    Utah
+                                                    (24 miles)
+                                                </li>
+                                                <li>Stay on State Route 9 West into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is 12 miles ahead on the left.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                <b>
+                                                    From Grand Canyon National Park: North Rim, Arizona (126
+                                                    miles):
+                                                </b>
+                                            </p>
+                                            <ul>
+                                                <li>State Route 67 North</li>
+                                                <li>Left on US Route 89A North (78 miles)</li>
+                                                <li>Left on State Route 9 West in Mount Carmel Junction,
+                                                    Utah (24
+                                                    miles)
+                                                </li>
+                                                <li>Stay on State Route 9 West into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is 12 miles ahead on the left.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                <b>From Grand Canyon National Park: South Rim, Arizona (253
+                                                    miles):</b>
+                                            </p>
+                                            <ul>
+                                                <li>State Route 64 East</li>
+                                                <li>Left on US Route 89 North in Cameron, Arizona (192
+                                                    miles)
+                                                </li>
+                                                <li>Left on State Route 9 West in Mount Carmel Junction,
+                                                    Utah
+                                                    (24 miles)
+                                                </li>
+                                                <li>Stay on State Route 9 West into Zion National Park, the
+                                                    Zion
+                                                    Canyon Visitor Center is 12 miles ahead on the left.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="avia-map" role="tabpanel"
+                                     aria-labelledby="pills-contact-tab">
+                                    <p>
+                                        <b>International Airports:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Las Vegas, Nevada (170 miles)
+                                        </li>
+                                        <li>
+                                            Salt Lake City, Utah (300 miles)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Regional Airports:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Saint George, Utah (49 miles) has flights from Salt Lake City,
+                                            Utah and Denver, Colorado.
+                                        </li>
+                                        <li>
+                                            Cedar City, Utah (60 miles) has flights from Salt Lake City,
+                                            Utah
+                                        </li>
+                                    </ul>
+                                    <br><br>
+                                </div>
+                                <div class="tab-pane fade" id="charging" role="tabpanel"
+                                     aria-labelledby="pills-contact-tab">
+                                    <p>
+                                        <b>Kolob Canyons Visitor Center:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            One dual-port Level 2 J1772 charging station
+                                        </li>
+                                        <li>
+                                            Available 24 hours/day with purchase of code (no overnight
+                                            camping at the Visitor Center)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Zion Canyon Visitor Center:</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            One dual-port Level 2 J1772 charging station
+                                        </li>
+                                        <li>
+                                            Available 24 hours/day with purchase of code (no overnight
+                                            camping at the Visitor Center)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Purchase a $5 charging code at the Zion National Park Forever
+                                        Project bookstore inside the Visitor Center during operating
+                                        hours.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Code will be active for three days and provides charging at Kolob Canyon Visitor Center and Zion Canyon Visitor Center.
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Thank you for your actions, which help reduce greenhouse gas emissions and petroleum use. This partnership between Zion National Park Forever Project, Zion National Park, and YOU helps protect our resources for the enjoyment of this and future generations. Charge on!
+                                    </p>
+                                    <a href="https://www.nps.gov/zion/learn/nature/green-transit.htm" target="_blank">Learn more about alternative fuel vehicles in Zion</a>
+                                    <br><br>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="underConstructionModal" tabindex="-1" aria-labelledby="underConstructionModal"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Under Construction</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <i>This modal is under construction. Please check "Driving Directions" link</i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,6 +506,8 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
 
         <div class="container">
@@ -270,6 +525,9 @@
         </div>
 
     </main>
+
+
+
 
 
     <!----------------------------------
@@ -387,6 +645,10 @@
     </footer>
 
 </div> <!-- container-fluid-closure-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
