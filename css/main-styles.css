@@ -23,7 +23,6 @@
 
 html, body {
     font-size: 1rem;
-	font: inherit;
     vertical-align: baseline;
     overflow-x: hidden;
 }
@@ -35,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 p, ul, ol {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     font-weight: 300;
 }
 
@@ -88,11 +87,8 @@ HERO / LANDING PAGE SECTION
 .hero {
     width: 100%;
     height: 90vh;
-    background: url("../img/hero/hero-zion-1920x1200.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/hero/hero-zion-1920x1200.jpg") no-repeat center;
     background-size: cover;
-    background-position: center center;
-    /* filter: brightness(90%); */
 }
 
 .hero-content {
@@ -110,7 +106,7 @@ HERO / LANDING PAGE SECTION
     margin-bottom: .3em;
     line-height: 77px;
     letter-spacing: 1px;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 65%);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.65);
 }
 
 .hero-content .hero-desc {
@@ -118,7 +114,7 @@ HERO / LANDING PAGE SECTION
     margin-bottom: 2em;
     width: 52ch;
     font-weight: 400;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 100%);
+    text-shadow: -1px 2px 5px rgb(29, 37, 45);
 }
 
 .hero-content .hero-button {
@@ -253,7 +249,6 @@ HERO / LANDING PAGE SECTION
 
 /* left  */
 .box-left {
-    /* border: 3px solid blue; */
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -267,7 +262,6 @@ HERO / LANDING PAGE SECTION
     padding-bottom: .7em;
     font-size: 2rem;
     font-weight: 500;
-    /* text-shadow: -1px 2px 5px rgb(29 37 45 / 0.30); */
 }
 
 .tour-images-box {
@@ -449,7 +443,6 @@ body > div > hr {
 }
 
 .map-container h2 {
-    padding-bottom: .8em;
     display: flex;
     justify-content: center;
     padding-bottom: .8em;
@@ -482,7 +475,7 @@ iframe {
     width: 20ch;
     text-align: center;
     padding: 1em;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 30%);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.3);
 }
 
 .input-group-text {
@@ -498,7 +491,7 @@ iframe {
     white-space: nowrap;
     background-color: #009688 !important;
     border: 1px solid #009688 !important;
-    border-radius: 0px 10px 10px 0px !important;
+    border-radius: 0 10px 10px 0!important;
     height: 40px;
     cursor: pointer;
 }
@@ -532,13 +525,13 @@ iframe {
 .col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 > h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 20%);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.2);
     margin: 0;
 }
 
 .col-md-3.col-lg-4.col-xl-3.mx-auto.mb-4 > h6 {
     font-size: 2rem;
-    text-shadow: -1px 2px 5px rgb(29 37 45 / 20%);
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.2);
 }
 
 .footer-heading::before {
