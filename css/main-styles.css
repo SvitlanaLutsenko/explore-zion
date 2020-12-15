@@ -407,9 +407,7 @@ body > div > hr {
     bottom: 40px !important;
 }
 
-.swiper-button-prev {
-    background-color: white;
-}
+
 
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
     content: 'next';
@@ -537,4 +535,42 @@ iframe {
 .footer-heading::before {
     content: url("../img/icons/main-logo.svg");
     padding: 0 10px 0 0;
+}
+
+/* intro section container */
+.intro-section-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    border-radius: 20px;
+    padding: 1em 3.5em;
+    margin: -125px auto 0;
+    background-color: #ffffff;
+    opacity: .95;
+}
+
+.intro-section-container h2 {
+    text-shadow: -1px 2px 5px rgba(29, 37, 45, 0.15);
+}
+
+.breadcrumb-box ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-box ul li {
+    padding-right: 5px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-box ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #009688;
+    font-weight: 500;
 }
